@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Катарсис индуцирует даосизм." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPw-Jg-zCg">
+                                <rect key="frame" x="346" y="285" width="234" height="30"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="greenAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Fhb-Yc-Z33"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Гегельянство, как принято считать, представляет собой трагический интеллект. " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5c-Wk-8L3">
+                                <rect key="frame" x="20" y="285" width="318" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="yellowAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="LpZ-hK-mw4"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nPw-Jg-zCg" firstAttribute="leading" secondItem="L5c-Wk-8L3" secondAttribute="trailing" constant="8" id="cex-jf-Zy5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nPw-Jg-zCg" secondAttribute="trailing" id="ipl-xP-mh2"/>
+                            <constraint firstItem="nPw-Jg-zCg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lbx-G2-eEw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L5c-Wk-8L3" secondAttribute="leading" id="quV-gs-sVa"/>
+                            <constraint firstItem="L5c-Wk-8L3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ua3-qf-ezD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenText" destination="nPw-Jg-zCg" id="oN0-vi-1BY"/>
+                        <outlet property="yellowText" destination="L5c-Wk-8L3" id="KE6-L5-U1N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="389"/>
+        </scene>
+    </scenes>
+</document>
