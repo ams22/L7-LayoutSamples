@@ -23,6 +23,12 @@
 
 @implementation GreenBoxViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+//    self.greenBox.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
+}
+
 - (void)viewDidLayoutSubviews {
     CGRect frame = [self randomFrame];
 

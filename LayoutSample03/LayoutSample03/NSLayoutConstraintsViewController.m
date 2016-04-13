@@ -117,7 +117,7 @@
 
     // smallerView <-> biggerView
 
-    [view addConstraint:
+    [greenView addConstraint:
      [NSLayoutConstraint constraintWithItem:biggerView
                                   attribute:NSLayoutAttributeLeading
                                   relatedBy:NSLayoutRelationEqual
@@ -125,7 +125,7 @@
                                   attribute:NSLayoutAttributeTrailing
                                  multiplier:1.f
                                    constant:8.f]];
-    [view addConstraint:
+    [greenView addConstraint:
      [NSLayoutConstraint constraintWithItem:biggerView
                                   attribute:NSLayoutAttributeWidth
                                   relatedBy:NSLayoutRelationEqual

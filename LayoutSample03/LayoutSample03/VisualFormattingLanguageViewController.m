@@ -42,7 +42,7 @@
     // greenView
 
     [view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"|-(standardMargin)-[greenView]-(20)-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(standardMargin)-[greenView]-(20)-|"
                                              options:0
                                              metrics:metrics
                                                views:views]];
